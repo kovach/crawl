@@ -2927,6 +2927,12 @@ void level_change(bool skip_attribute_increase)
                 }
                 break;
 
+            case SP_CHIMERA:
+                if (!(you.experience_level % 2))
+                {
+                }
+                break;
+
             case SP_BASE_DRACONIAN:
                 if (you.experience_level >= 7)
                 {

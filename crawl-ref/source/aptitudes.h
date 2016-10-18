@@ -1517,6 +1517,46 @@ static const species_skill_aptitude species_skill_aptitudes[] =
     APT(SP_IMP,            SK_POISON_MAGIC,   -1),
     APT(SP_IMP,            SK_INVOCATIONS,     1),
     APT(SP_IMP,            SK_EVOCATIONS,      0),
+
+    // SP_CHIMERA
+    APT(SP_CHIMERA,           SK_FIGHTING,       -1),
+    APT(SP_CHIMERA,           SK_SHORT_BLADES,   -2),
+    APT(SP_CHIMERA,           SK_LONG_BLADES,    -2),
+    APT(SP_CHIMERA,           SK_AXES,           -2),
+    APT(SP_CHIMERA,           SK_MACES_FLAILS,   -2),
+    APT(SP_CHIMERA,           SK_POLEARMS,       -2),
+    APT(SP_CHIMERA,           SK_STAVES,         -2),
+    APT(SP_CHIMERA,           SK_SLINGS,         -2),
+    APT(SP_CHIMERA,           SK_BOWS,           -2),
+    APT(SP_CHIMERA,           SK_CROSSBOWS,      -2),
+    APT(SP_CHIMERA,           SK_THROWING,       -1),
+    APT(SP_CHIMERA,           SK_ARMOUR,         -2),
+    APT(SP_CHIMERA,           SK_DODGING,        -2),
+    APT(SP_CHIMERA,           SK_STEALTH,        -4),
+#if TAG_MAJOR_VERSION == 34
+    APT(SP_CHIMERA,           SK_STABBING,      UNUSABLE_SKILL),
+#endif
+    APT(SP_CHIMERA,           SK_SHIELDS,        -2),
+#if TAG_MAJOR_VERSION == 34
+    APT(SP_CHIMERA,           SK_TRAPS,         UNUSABLE_SKILL),
+#endif
+    APT(SP_CHIMERA,           SK_UNARMED_COMBAT,  0),
+    APT(SP_CHIMERA,           SK_SPELLCASTING,   -2),
+    APT(SP_CHIMERA,           SK_CONJURATIONS,   -3),
+    APT(SP_CHIMERA,           SK_HEXES,          -3),
+    APT(SP_CHIMERA,           SK_CHARMS,         -3),
+    APT(SP_CHIMERA,           SK_SUMMONINGS,     -3),
+    APT(SP_CHIMERA,           SK_NECROMANCY,     -1),
+    APT(SP_CHIMERA,           SK_TRANSLOCATIONS, -3),
+    APT(SP_CHIMERA,           SK_TRANSMUTATIONS, -4),
+    APT(SP_CHIMERA,           SK_FIRE_MAGIC,     -4),
+    APT(SP_CHIMERA,           SK_ICE_MAGIC,      -4),
+    APT(SP_CHIMERA,           SK_AIR_MAGIC,      -3),
+    APT(SP_CHIMERA,           SK_EARTH_MAGIC,    -3),
+    APT(SP_CHIMERA,           SK_POISON_MAGIC,   -3),
+    APT(SP_CHIMERA,           SK_INVOCATIONS,    -1),
+    APT(SP_CHIMERA,           SK_EVOCATIONS,     -3),
+
 };
 
 #endif

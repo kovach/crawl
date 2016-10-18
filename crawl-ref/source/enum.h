@@ -4258,6 +4258,7 @@ enum species_type
     SP_FORMICID,
     SP_VINE_STALKER,
     SP_IMP,
+    SP_CHIMERA,
     NUM_SPECIES,
 
     SP_UNKNOWN  = 100,

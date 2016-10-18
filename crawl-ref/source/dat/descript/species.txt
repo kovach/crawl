@@ -128,7 +128,12 @@ Their magical reserves absorb damage, and they pack a magic-restoring bite.
 %%%%
 Imp
 
-Tiny warlike demons. They gain regeneration and wings as they gain
-experience. They are skilled in fire magic, and often wield whips and
-tridents.
+Small warlike demons. Having wandered far from their homeland, they suffer from
+frequent involuntary translocations and other outbursts.
+%%%%
+Chimera
+
+A massive undead beast designed by Cigotuvi with little forethought. It
+assembles the strengths and weaknesses of many monsters into a single unwieldy
+package.
 %%%%

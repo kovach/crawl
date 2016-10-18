@@ -706,6 +706,39 @@ static const map<species_type, species_def> species_data =
     { SK_POLEARMS, SK_MACES_FLAILS },
 } },
 
+{ SP_CHIMERA, {
+    "CC",
+    "Chimera", "Chimeric", "Chimera",
+    SPF_NONE,
+    -1, 2, -1, 3,
+    MONS_ABOMINATION_LARGE,
+    HT_LAND, US_UNDEAD, SIZE_LARGE,
+    15, 4, 5, // 24
+    { STAT_STR, STAT_INT, STAT_DEX }, 2,
+    {
+      { MUT_NEGATIVE_ENERGY_RESISTANCE, 3, 1 },
+      { MUT_TORMENT_RESISTANCE, 1, 1 },
+
+      { MUT_CLAWS, 1, 1}, { MUT_CLAWS, 1, 12}, { MUT_CLAWS, 1, 18},
+      { MUT_BEAK, 1, 1}, { MUT_BEAK, 1, 12}, { MUT_BEAK, 1, 18},
+      { MUT_HOOVES, 1, 1}, { MUT_HOOVES, 1, 12}, { MUT_HOOVES, 1, 18},
+      { MUT_HORNS, 1, 1}, { MUT_HORNS, 1, 12}, { MUT_HORNS, 1, 18},
+
+      { MUT_CONSTRICTING_TAIL, 1, 6},
+      { MUT_FOUL_STENCH, 1, 8},
+
+      // Does this mutation work?
+      // { MUT_STINGER, 1, 10}, { MUT_STINGER, 1, 14}, { MUT_STINGER, 1, 18},
+
+      { MUT_DEFORMED, 1, 1}, { MUT_SLOW, 2, 1 },
+			{ MUT_DETERIORATION, 1, 1 }, { MUT_DETERIORATION, 1, 12 },
+    },
+    {},
+    {},
+    { JOB_FIGHTER, JOB_MONK, JOB_HUNTER, JOB_BERSERKER, JOB_NECROMANCER },
+    { SK_UNARMED_COMBAT },
+} },
+
 #if TAG_MAJOR_VERSION == 34
 { SP_SLUDGE_ELF, {
     "SE",
