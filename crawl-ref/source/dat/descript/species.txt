@@ -126,3 +126,9 @@ Vine Stalker
 Frail symbionts, Vine Stalkers cannot regain health from devices or potions.
 Their magical reserves absorb damage, and they pack a magic-restoring bite.
 %%%%
+Imp
+
+Tiny warlike demons. They gain regeneration and wings as they gain
+experience. They are skilled in fire magic, and often wield whips and
+tridents.
+%%%%

@@ -684,6 +684,28 @@ static const map<species_type, species_def> species_data =
     { SK_MACES_FLAILS, SK_AXES, SK_POLEARMS, SK_LONG_BLADES, SK_STAVES,
       SK_BOWS, SK_CROSSBOWS, SK_SLINGS },
 } },
+
+{ SP_IMP, {
+    "Im",
+    "Imp", "Imp", "Imp",
+    SPF_NONE,
+    0, -2, 0, 4,
+    MONS_CRIMSON_IMP,
+    HT_LAND, US_ALIVE, SIZE_LITTLE,
+    4, 9, 11, // 27
+    { STAT_INT, STAT_DEX }, 4,
+    { { MUT_TELEPORT, 2, 1 }, { MUT_BLINK, 2, 1 }, { MUT_SCREAM, 3, 1 },
+      { MUT_NEGATIVE_ENERGY_RESISTANCE, 3, 1 },
+      { MUT_BIG_WINGS, 1, 14 },
+      { MUT_REGENERATION, 1, 1 }, { MUT_REGENERATION, 1, 10 },
+    },
+    {},
+    {},
+    { JOB_GLADIATOR, JOB_BERSERKER, JOB_ABYSSAL_KNIGHT, JOB_WARPER,
+			JOB_SUMMONER, JOB_FIRE_ELEMENTALIST, JOB_HUNTER },
+    { SK_POLEARMS, SK_MACES_FLAILS },
+} },
+
 #if TAG_MAJOR_VERSION == 34
 { SP_SLUDGE_ELF, {
     "SE",

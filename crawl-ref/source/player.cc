@@ -6182,6 +6182,7 @@ mon_holy_type player::holiness(bool temp) const
 {
     mon_holy_type holi = undead_state(temp) ? MH_UNDEAD : MH_NATURAL;
 
+    // TODO should imps be poison immune?
     if (species == SP_GARGOYLE ||
         temp && (form == TRAN_STATUE || form == TRAN_WISP || petrified()))
     {
@@ -6191,7 +6192,7 @@ mon_holy_type player::holiness(bool temp) const
     if (is_good_god(religion))
         holi |= MH_HOLY;
 
-    if (is_evil_god(religion) || species == SP_DEMONSPAWN)
+    if (is_evil_god(religion) || species == SP_DEMONSPAWN || species == SP_IMP)
         holi |= MH_EVIL;
 
     // possible XXX: Monsters get evil/unholy bits set on spell selection
@@ -6202,7 +6203,7 @@ mon_holy_type player::holiness(bool temp) const
 bool player::undead_or_demonic() const
 {
     // This is only for TSO-related stuff, so demonspawn are included.
-    return undead_state() || species == SP_DEMONSPAWN;
+    return undead_state() || species == SP_DEMONSPAWN || species == SP_IMP;
 }
 
 bool player::holy_wrath_susceptible() const
