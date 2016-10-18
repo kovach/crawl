@@ -687,7 +687,7 @@ static const map<species_type, species_def> species_data =
 
 { SP_IMP, {
     "Im",
-    "Imp", "Imp", "Imp",
+    "Imp", "Impish", "Imp",
     SPF_NONE,
     0, -2, 0, 4,
     MONS_CRIMSON_IMP,
