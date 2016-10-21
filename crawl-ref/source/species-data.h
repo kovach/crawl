@@ -697,7 +697,7 @@ static const map<species_type, species_def> species_data =
     { { MUT_TELEPORT, 2, 1 }, { MUT_BLINK, 2, 1 }, { MUT_SCREAM, 3, 1 },
       { MUT_NEGATIVE_ENERGY_RESISTANCE, 3, 1 },
       { MUT_BIG_WINGS, 1, 14 },
-      { MUT_REGENERATION, 1, 1 }, { MUT_REGENERATION, 1, 10 },
+      { MUT_REGENERATION, 1, 1 },
     },
     {},
     {},
@@ -707,41 +707,27 @@ static const map<species_type, species_def> species_data =
 } },
 
 { SP_CHIMERA, {
-    "CC",
+    "Ch",
     "Chimera", "Chimeric", "Chimera",
     SPF_NONE,
-    -1, 3, -1, 3,
+    -1, 3, -1, 5,
     MONS_ABOMINATION_LARGE,
     HT_LAND, US_UNDEAD, SIZE_LARGE,
-    10, 7, 7, // 24
-    { STAT_STR }, 3,
+    12, 6, 6, // 24
+    { STAT_STR, STAT_INT, STAT_DEX }, 2,
     {
       { MUT_NEGATIVE_ENERGY_RESISTANCE, 3, 1 },
       { MUT_TORMENT_RESISTANCE, 1, 1 },
-      { MUT_DEFORMED, 1, 1}, { MUT_SLOW, 2, 1 }, { MUT_DETERIORATION, 1, 1 },
-
+      { MUT_DEFORMED, 1, 1},
+      { MUT_SLOW, 3, 1 },
+      // Upgrade randomly in player.cc
       { MUT_GELATINOUS_BODY, 1, 1},
       { MUT_CLAWS,  1,  1 },
       { MUT_FANGS,  1,  1 },
       { MUT_HOOVES, 1,  1 },
       { MUT_HORNS,  1,  1 },
-      { MUT_CONSTRICTING_TAIL, 1, 6},
-      { MUT_FOUL_STENCH, 1, 7},
-      { MUT_GELATINOUS_BODY, 1, 8},
-      { MUT_FANGS,  1,  9 },
-      { MUT_HOOVES, 1, 10 },
-      { MUT_HORNS,  1, 11 },
-      { MUT_DETERIORATION, 1, 12 },
-      { MUT_CLAWS,  1, 12 },
-      { MUT_GELATINOUS_BODY, 1, 16},
-      { MUT_FANGS,  1, 17 },
-      { MUT_HOOVES, 1, 18 },
-      { MUT_HORNS,  1, 19 },
-      { MUT_CLAWS,  1, 20 },
-
-      // Does this mutation work?
-      // { MUT_STINGER, 1, 10}, { MUT_STINGER, 1, 14}, { MUT_STINGER, 1, 18},
-
+      { MUT_CONSTRICTING_TAIL, 1, 7},
+      { MUT_REGENERATION, 1, 9},
     },
     {},
     {},

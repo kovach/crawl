@@ -2927,12 +2927,6 @@ void level_change(bool skip_attribute_increase)
                 }
                 break;
 
-            case SP_CHIMERA:
-                if (!(you.experience_level % 2))
-                {
-                }
-                break;
-
             case SP_BASE_DRACONIAN:
                 if (you.experience_level >= 7)
                 {
@@ -3044,6 +3038,33 @@ void level_change(bool skip_attribute_increase)
                     }
                 }
 
+                break;
+            }
+
+            case SP_CHIMERA:
+            {
+                int xlevel = you.experience_level;
+                if (xlevel % 2 == 0 && xlevel <= 20)
+                {
+                    vector<mutation_type> mutations = { MUT_GELATINOUS_BODY, MUT_CLAWS, MUT_FANGS, MUT_HOOVES, MUT_HORNS, };
+                    vector<mutation_type> buckets[2];
+                    // Maybe this is a weird distribution to upgrade them with?
+                    int total = 0;
+                    for (const mutation_type mutation : mutations) {
+                        uint8_t mutation_level = you.mutation[mutation];
+                        if (mutation_level < 3)
+                        {
+                            buckets[mutation_level-1].push_back(mutation);
+                            total++;
+                        }
+                    }
+                    int bucket = x_chance_in_y(buckets[0].size(), total) ? 0 : 1;
+                    mutation_type mutation = buckets[bucket][random2(buckets[bucket].size())];
+                    perma_mutate(mutation, 1, "Chimera growth");
+
+                    if (xlevel == 20)
+                        mprf(MSGCH_MUTATION, "You feel your growth is complete.");
+                }
                 break;
             }
 
