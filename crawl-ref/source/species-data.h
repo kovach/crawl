@@ -713,22 +713,11 @@ static const map<species_type, species_def> species_data =
     -1, 3, -1, 5,
     MONS_ABOMINATION_LARGE,
     HT_LAND, US_UNDEAD, SIZE_LARGE,
-    12, 6, 6, // 24
+    13, 7, 7, // 27
     { STAT_STR, STAT_INT, STAT_DEX }, 2,
-    {
-      { MUT_NEGATIVE_ENERGY_RESISTANCE, 3, 1 },
-      { MUT_TORMENT_RESISTANCE, 1, 1 },
-      { MUT_DEFORMED, 1, 1},
-      { MUT_SLOW, 3, 1 },
-      // Upgrade randomly in player.cc
-      { MUT_GELATINOUS_BODY, 1, 1},
-      { MUT_CLAWS,  1,  1 },
-      { MUT_FANGS,  1,  1 },
-      { MUT_HOOVES, 1,  1 },
-      { MUT_HORNS,  1,  1 },
-      { MUT_CONSTRICTING_TAIL, 1, 7},
-      { MUT_REGENERATION, 1, 9},
-    },
+    { { MUT_NEGATIVE_ENERGY_RESISTANCE, 3, 1 }, { MUT_TORMENT_RESISTANCE, 1, 1 },
+      { MUT_DEFORMED, 1, 1}, { MUT_SLOW, 3, 1 },
+      { MUT_CLAWS,  1,  1 }, { MUT_REGENERATION, 1, 1}, },
     {},
     {},
     { JOB_FIGHTER, JOB_MONK, JOB_HUNTER, JOB_BERSERKER, JOB_NECROMANCER },

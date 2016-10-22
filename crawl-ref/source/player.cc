@@ -3044,26 +3044,26 @@ void level_change(bool skip_attribute_increase)
             case SP_CHIMERA:
             {
                 int xlevel = you.experience_level;
-                if (xlevel % 2 == 0 && xlevel <= 20)
+                // Start with claws 1. Upgrade at 2,3,4,5,6,8,10,12,...,24.
+                if (((xlevel >= 2 && xlevel <= 6) || xlevel % 2 == 0)
+                    && xlevel <= 24)
                 {
-                    vector<mutation_type> mutations = { MUT_GELATINOUS_BODY, MUT_CLAWS, MUT_FANGS, MUT_HOOVES, MUT_HORNS, };
-                    vector<mutation_type> buckets[2];
-                    // Maybe this is a weird distribution to upgrade them with?
-                    int total = 0;
-                    for (const mutation_type mutation : mutations) {
-                        uint8_t mutation_level = you.mutation[mutation];
-                        if (mutation_level < 3)
+                    vector<mutation_type> available_mutations;
+                    for (mutation_type mutation : { MUT_GELATINOUS_BODY, MUT_CLAWS, MUT_FANGS, MUT_HOOVES, MUT_HORNS, })
+                    {
+                        if (you.mutation[mutation] < 3)
                         {
-                            buckets[mutation_level-1].push_back(mutation);
-                            total++;
+                            available_mutations.push_back(mutation);
                         }
                     }
-                    int bucket = x_chance_in_y(buckets[0].size(), total) ? 0 : 1;
-                    mutation_type mutation = buckets[bucket][random2(buckets[bucket].size())];
+                    // Pick one uniformly:
+                    mutation_type mutation = available_mutations[random2(available_mutations.size())];
                     perma_mutate(mutation, 1, "Chimera growth");
 
-                    if (xlevel == 20)
-                        mprf(MSGCH_MUTATION, "You feel your growth is complete.");
+                    if (xlevel == 6)
+                        mprf(MSGCH_MUTATION, "You feel your growth slowing down a bit.");
+                    if (xlevel == 24)
+                        mprf(MSGCH_MUTATION, "You feel your monstrous growth is complete.");
                 }
                 break;
             }
