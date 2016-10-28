@@ -139,6 +139,6 @@ package.
 %%%%
 Jelly Man
 
-Something vaguely humanoid from the slime pits. Though they suffer from poor
-fighting and magic skills, they evolve rapidly.
+Something vaguely humanoid from the slime pits. They can't use weapons or armour
+but evolve rapidly.
 %%%%

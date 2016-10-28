@@ -725,22 +725,25 @@ static const map<species_type, species_def> species_data =
 } },
 
 { SP_JELLY_MAN, {
-    "JM",
+    "Je",
     "Jelly Man", "Jellied", "Jelly Man",
     SPF_NONE,
-    0, -1, -1, 3,
+    0, 0, -1, 3,
     MONS_JELLY,
     HT_LAND, US_ALIVE, SIZE_MEDIUM,
     10, 7, 7, // 24
     { STAT_STR, STAT_INT, STAT_DEX }, 4,
-    { { MUT_EVOLUTION, 2, 1 }, { MUT_ACIDIC_BITE, 1, 1}, { MUT_SLOW, 3, 1 },
-      { MUT_PSEUDOPODS, 1, 1}
+    { { MUT_EVOLUTION, 2, 1 },
+      { MUT_PSEUDOPODS, 3, 1},
+      { MUT_YELLOW_SCALES, 3, 1},
+      { MUT_GELATINOUS_BODY, 3, 1},
+      { MUT_ACIDIC_BITE, 1, 1},
+      { MUT_EYEBALLS, 3, 1},
     },
-    {},
-    {},
-    { JOB_FIGHTER, JOB_GLADIATOR, JOB_MONK, JOB_BERSERKER, },
-    { SK_MACES_FLAILS, SK_AXES, SK_POLEARMS, SK_LONG_BLADES, SK_STAVES,
-      SK_BOWS, SK_CROSSBOWS, SK_SLINGS },
+    { "You cannot wear most types of armour or shields.", },
+    { "almost no armour", },
+    { JOB_MONK, JOB_BERSERKER, },
+    { SK_UNARMED_COMBAT },
 } },
 
 #if TAG_MAJOR_VERSION == 34
