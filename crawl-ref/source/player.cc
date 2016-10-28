@@ -3041,13 +3041,13 @@ void level_change(bool skip_attribute_increase)
                 break;
             }
 
+            // Start with claws 1. Upgrade at 2,3,4,5,6,8,10,12,...,24.
             case SP_CHIMERA:
             {
                 int xlevel = you.experience_level;
-                // Start with claws 1. Upgrade at 2,3,4,5,6,8,10,12,...,24.
-                if (((xlevel >= 2 && xlevel <= 6) || xlevel % 2 == 0)
-                    && xlevel <= 24)
+                if ((xlevel <= 6 || xlevel % 2 == 0) && xlevel <= 24)
                 {
+                    // mutations that aren't yet rank 3
                     vector<mutation_type> available_mutations;
                     for (mutation_type mutation : { MUT_GELATINOUS_BODY, MUT_CLAWS, MUT_FANGS, MUT_HOOVES, MUT_HORNS, })
                     {

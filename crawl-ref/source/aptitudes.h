@@ -1519,7 +1519,7 @@ static const species_skill_aptitude species_skill_aptitudes[] =
     APT(SP_IMP,            SK_EVOCATIONS,      0),
 
     // SP_CHIMERA
-    APT(SP_CHIMERA,           SK_FIGHTING,       -1),
+    APT(SP_CHIMERA,           SK_FIGHTING,       -2),
     APT(SP_CHIMERA,           SK_SHORT_BLADES,   -3),
     APT(SP_CHIMERA,           SK_LONG_BLADES,    -3),
     APT(SP_CHIMERA,           SK_AXES,           -3),
@@ -1529,14 +1529,14 @@ static const species_skill_aptitude species_skill_aptitudes[] =
     APT(SP_CHIMERA,           SK_SLINGS,         -3),
     APT(SP_CHIMERA,           SK_BOWS,           -3),
     APT(SP_CHIMERA,           SK_CROSSBOWS,      -3),
-    APT(SP_CHIMERA,           SK_THROWING,       -1),
+    APT(SP_CHIMERA,           SK_THROWING,       -2),
     APT(SP_CHIMERA,           SK_ARMOUR,         -3),
     APT(SP_CHIMERA,           SK_DODGING,        -2),
     APT(SP_CHIMERA,           SK_STEALTH,        -5),
 #if TAG_MAJOR_VERSION == 34
     APT(SP_CHIMERA,           SK_STABBING,      UNUSABLE_SKILL),
 #endif
-    APT(SP_CHIMERA,           SK_SHIELDS,        -1),
+    APT(SP_CHIMERA,           SK_SHIELDS,        -2),
 #if TAG_MAJOR_VERSION == 34
     APT(SP_CHIMERA,           SK_TRAPS,         UNUSABLE_SKILL),
 #endif
