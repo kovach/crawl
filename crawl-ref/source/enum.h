@@ -4259,6 +4259,7 @@ enum species_type
     SP_VINE_STALKER,
     SP_IMP,
     SP_CHIMERA,
+    SP_JELLY_MAN,
     NUM_SPECIES,
 
     SP_UNKNOWN  = 100,

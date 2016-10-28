@@ -1557,6 +1557,45 @@ static const species_skill_aptitude species_skill_aptitudes[] =
     APT(SP_CHIMERA,           SK_INVOCATIONS,    -1),
     APT(SP_CHIMERA,           SK_EVOCATIONS,     -3),
 
+    // SP_JELLY_MAN
+    APT(SP_JELLY_MAN,           SK_FIGHTING,        0),
+    APT(SP_JELLY_MAN,           SK_SHORT_BLADES,   -2),
+    APT(SP_JELLY_MAN,           SK_LONG_BLADES,    -2),
+    APT(SP_JELLY_MAN,           SK_AXES,           -2),
+    APT(SP_JELLY_MAN,           SK_MACES_FLAILS,   -2),
+    APT(SP_JELLY_MAN,           SK_POLEARMS,       -2),
+    APT(SP_JELLY_MAN,           SK_STAVES,         -2),
+    APT(SP_JELLY_MAN,           SK_SLINGS,         -2),
+    APT(SP_JELLY_MAN,           SK_BOWS,           -2),
+    APT(SP_JELLY_MAN,           SK_CROSSBOWS,      -2),
+    APT(SP_JELLY_MAN,           SK_THROWING,       -2),
+    APT(SP_JELLY_MAN,           SK_ARMOUR,         -2),
+    APT(SP_JELLY_MAN,           SK_DODGING,        -2),
+    APT(SP_JELLY_MAN,           SK_STEALTH,        -2),
+#if TAG_MAJOR_VERSION == 34
+    APT(SP_JELLY_MAN,           SK_STABBING,      UNUSABLE_SKILL),
+#endif
+    APT(SP_JELLY_MAN,           SK_SHIELDS,        -2),
+#if TAG_MAJOR_VERSION == 34
+    APT(SP_JELLY_MAN,           SK_TRAPS,         UNUSABLE_SKILL),
+#endif
+    APT(SP_JELLY_MAN,           SK_UNARMED_COMBAT, -2),
+    APT(SP_JELLY_MAN,           SK_SPELLCASTING,   -2),
+    APT(SP_JELLY_MAN,           SK_CONJURATIONS,   -2),
+    APT(SP_JELLY_MAN,           SK_HEXES,          -2),
+    APT(SP_JELLY_MAN,           SK_CHARMS,         -2),
+    APT(SP_JELLY_MAN,           SK_SUMMONINGS,     -2),
+    APT(SP_JELLY_MAN,           SK_NECROMANCY,     -2),
+    APT(SP_JELLY_MAN,           SK_TRANSLOCATIONS, -2),
+    APT(SP_JELLY_MAN,           SK_TRANSMUTATIONS, -2),
+    APT(SP_JELLY_MAN,           SK_FIRE_MAGIC,     -2),
+    APT(SP_JELLY_MAN,           SK_ICE_MAGIC,      -2),
+    APT(SP_JELLY_MAN,           SK_AIR_MAGIC,      -2),
+    APT(SP_JELLY_MAN,           SK_EARTH_MAGIC,    -2),
+    APT(SP_JELLY_MAN,           SK_POISON_MAGIC,   -2),
+    APT(SP_JELLY_MAN,           SK_INVOCATIONS,    -1),
+    APT(SP_JELLY_MAN,           SK_EVOCATIONS,     -2),
+
 };
 
 #endif
