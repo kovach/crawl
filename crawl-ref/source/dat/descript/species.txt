@@ -142,3 +142,8 @@ Jelly Man
 Something vaguely humanoid from the slime pits. They can't use weapons or armour
 but evolve rapidly.
 %%%%
+Juggernaut
+
+The largest of the giants, but just barely ambitious enough to go seeking the
+orb. Slow to act but fast to move.
+%%%%

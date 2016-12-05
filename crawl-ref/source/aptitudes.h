@@ -1596,6 +1596,45 @@ static const species_skill_aptitude species_skill_aptitudes[] =
     APT(SP_JELLY_MAN,           SK_INVOCATIONS,    -1),
     APT(SP_JELLY_MAN,           SK_EVOCATIONS,     -2),
 
+    // SP_JUGGERNAUT
+    APT(SP_JUGGERNAUT,           SK_FIGHTING,        1),
+    APT(SP_JUGGERNAUT,           SK_SHORT_BLADES,    0),
+    APT(SP_JUGGERNAUT,           SK_LONG_BLADES,     2),
+    APT(SP_JUGGERNAUT,           SK_AXES,            2),
+    APT(SP_JUGGERNAUT,           SK_MACES_FLAILS,    2),
+    APT(SP_JUGGERNAUT,           SK_POLEARMS,        2),
+    APT(SP_JUGGERNAUT,           SK_STAVES,          2),
+    APT(SP_JUGGERNAUT,           SK_SLINGS,          2),
+    APT(SP_JUGGERNAUT,           SK_BOWS,            2),
+    APT(SP_JUGGERNAUT,           SK_CROSSBOWS,       2),
+    APT(SP_JUGGERNAUT,           SK_THROWING,        2),
+    APT(SP_JUGGERNAUT,           SK_ARMOUR,          0),
+    APT(SP_JUGGERNAUT,           SK_DODGING,        -2),
+    APT(SP_JUGGERNAUT,           SK_STEALTH,        -4),
+#if TAG_MAJOR_VERSION == 34
+    APT(SP_JUGGERNAUT,           SK_STABBING,      UNUSABLE_SKILL),
+#endif
+    APT(SP_JUGGERNAUT,           SK_SHIELDS,        -1),
+#if TAG_MAJOR_VERSION == 34
+    APT(SP_JUGGERNAUT,           SK_TRAPS,         UNUSABLE_SKILL),
+#endif
+    APT(SP_JUGGERNAUT,           SK_UNARMED_COMBAT,  2),
+    APT(SP_JUGGERNAUT,           SK_SPELLCASTING,   -2),
+    APT(SP_JUGGERNAUT,           SK_CONJURATIONS,   -3),
+    APT(SP_JUGGERNAUT,           SK_HEXES,          -3),
+    APT(SP_JUGGERNAUT,           SK_CHARMS,         -3),
+    APT(SP_JUGGERNAUT,           SK_SUMMONINGS,     -3),
+    APT(SP_JUGGERNAUT,           SK_NECROMANCY,     -3),
+    APT(SP_JUGGERNAUT,           SK_TRANSLOCATIONS, -3),
+    APT(SP_JUGGERNAUT,           SK_TRANSMUTATIONS, -3),
+    APT(SP_JUGGERNAUT,           SK_FIRE_MAGIC,     -3),
+    APT(SP_JUGGERNAUT,           SK_ICE_MAGIC,      -3),
+    APT(SP_JUGGERNAUT,           SK_AIR_MAGIC,      -3),
+    APT(SP_JUGGERNAUT,           SK_EARTH_MAGIC,    -3),
+    APT(SP_JUGGERNAUT,           SK_POISON_MAGIC,   -3),
+    APT(SP_JUGGERNAUT,           SK_INVOCATIONS,    -2),
+    APT(SP_JUGGERNAUT,           SK_EVOCATIONS,     -2),
+
 };
 
 #endif

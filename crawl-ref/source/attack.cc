@@ -215,6 +215,10 @@ int attack::calc_to_hit(bool random)
         if (player_mutation_level(MUT_EYEBALLS))
             mhit += 2 * player_mutation_level(MUT_EYEBALLS) + 1;
 
+        // sp_juggernaut bonus
+        if (you.species == SP_JUGGERNAUT)
+          mhit += 8;
+
         // hit roll
         mhit = maybe_random2(mhit, random);
     }

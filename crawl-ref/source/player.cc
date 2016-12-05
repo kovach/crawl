@@ -1988,6 +1988,10 @@ int player_movement_speed()
     else if (you.fishtail || you.form == TRAN_HYDRA && you.in_water())
         mv = 6;
 
+    // Slowed to 6, at least, by juggernaut's general slowness.
+    if (you.species == SP_JUGGERNAUT)
+      mv = 4;
+
     // moving on liquefied ground takes longer
     if (you.liquefied_ground())
         mv += 3;
@@ -2043,7 +2047,7 @@ int player_movement_speed()
     // which is a bit of a jump, and a bit too fast) -- bwr
     // Currently Haste takes 6 to 4, which is 2.5x as fast as delay 10
     // and still seems plenty fast. -- elliptic
-    if (mv < FASTEST_PLAYER_MOVE_SPEED)
+    if (mv < FASTEST_PLAYER_MOVE_SPEED && you.species != SP_JUGGERNAUT) // lets allow juggernauts to go down to 3 since all actions take twice as long for them
         mv = FASTEST_PLAYER_MOVE_SPEED;
 
     return mv;
@@ -2086,6 +2090,13 @@ int player_speed()
     {
         ps *= 15;
         ps /= 10;
+    }
+
+    // Permanent statue form type effect for SP_JUGGERNAUT
+    if (you.species == SP_JUGGERNAUT)
+    {
+      ps *= 15;
+      ps /= 10;
     }
 
     return ps;

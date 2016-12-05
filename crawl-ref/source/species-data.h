@@ -746,6 +746,25 @@ static const map<species_type, species_def> species_data =
     { SK_UNARMED_COMBAT },
 } },
 
+{ SP_JUGGERNAUT, {
+    "Jg",
+    "Juggernaut", "Massive", "Juggernaut",
+    SPF_NONE,
+    -1, 4, -2, 5,
+    MONS_JUGGERNAUT,
+    HT_LAND, US_ALIVE, SIZE_LARGE,
+    17, 4, 4, // 25
+    { STAT_STR, }, 2,
+    { { MUT_TOUGH_SKIN, 2, 1 },
+      { MUT_LARGE_BONE_PLATES, 1, 1 },
+    },
+    { "All of your actions are somewhat slow", "You move very quickly.", "Your melee damage and accuracy are increased."},
+    { "global slow", "juggernaut legs", "juggernaut arms"},
+    { JOB_FIGHTER, JOB_GLADIATOR, JOB_MONK, JOB_BERSERKER, },
+    { SK_MACES_FLAILS, SK_AXES, SK_POLEARMS, SK_LONG_BLADES, SK_STAVES,
+      SK_BOWS, SK_CROSSBOWS, SK_SLINGS, SK_UNARMED_COMBAT },
+} },
+
 #if TAG_MAJOR_VERSION == 34
 { SP_SLUDGE_ELF, {
     "SE",

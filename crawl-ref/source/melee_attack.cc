@@ -1489,6 +1489,9 @@ int melee_attack::player_apply_final_multipliers(int damage)
     if (you.form == TRAN_STATUE)
         damage = div_rand_round(damage * 3, 2);
 
+    if (you.species == SP_JUGGERNAUT)
+        damage = div_rand_round(damage * 3, 2);
+
     // Can't affect much of anything as a shadow.
     if (you.form == TRAN_SHADOW)
         damage = div_rand_round(damage, 2);

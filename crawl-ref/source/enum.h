@@ -4260,6 +4260,7 @@ enum species_type
     SP_IMP,
     SP_CHIMERA,
     SP_JELLY_MAN,
+    SP_JUGGERNAUT,
     NUM_SPECIES,
 
     SP_UNKNOWN  = 100,
